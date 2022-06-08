@@ -34,6 +34,8 @@ namespace SeleniumNUnitParam
         private void ChooseDriverInstance(BrowerType browserType)
         {
             if (browserType == BrowerType.Chrome)
+                IWebDriver driver = new ChromeDriver(@"C:\my\path\to\chromedriver\directory");
+
                 Driver = new ChromeDriver();
             else if (browserType == BrowerType.Firefox)
             {
